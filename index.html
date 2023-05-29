@@ -4,27 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivani Belambe</title>
-    <link rel = "stylesheet" href="style.css">
-    
+    <link rel = "stylesheet" href="main_style.css">
+    <link rel = "stylesheet" href="about_me_style.css">
+    <script src="myscripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
     
 </head>
 
 
-<body>
-    <script src="myscripts.js"></script>
-    <header>
+<body onload="displayTime()">
 
-        <nav class="navbar">
-            <ul>
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="about-me.html">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <h1>Shivani Belambe's Portfolio</h1>
+<div class="header">
+    <div class="header-text">
+        <h1>shivani belambe</h1>
+        <p class="cs-major">computer science b.s. at UC Santa Cruz &#x1F4BB;</p>
+    </div>
+</div>
 
    
 
@@ -35,23 +31,194 @@
           <h3>Command Prompt</h3>
         </div>
         <div class="command-body">
-          <span class="prompt-text">
-            <p>Last login: <span id="time"></span></p>
-            C:\Users\Guest></span>
-          <input type="text" class="command-input" placeholder="Type your command here">
+            <span class="prompt-text">
+                <p>Last login: <span id="time"></span></p>
+                <p> <br> C:\Users\Guest> cd sbelambe <br></p>
+                <p> C:\Users\Guest\sbelambe> ls <br></p>
+                <p>About  Portfolio  Contact <br></p>
+            </span>
+            <p> <br> C:\Users\Guest\sbelambe</p>
+          <input type="text" class="command-input" id="command-input" placeholder="Type in your command-body">
+          <button type="button" onclick="processCommand()">Submit</button>
         </div>
+      </div>
+
+
+    
+    <div id="about">
+        <h1>About Me!</h1>
+
+        <div id="aboutme">
+            <p>My name is Shivani and I am a first year Computer Science B.S. major at University of California, Santa Cruz <br>
+            I have a strong passion for coding and problem solving. I am have developed these passions through my interests in...
+            <ul>
+                <li>Cybersecurity</li>
+                <li>UI/UX Design</li>
+                <li>Machine Learning</li>
+            </ul>
+
+
+            Through courses, personal projects, and online resources, I am consistently improving my knowledge of web development, data structures, algorithms, and software engineering principles.
+            <br> <br>
+            Apart from my technical skills, I am an avid learner and a great collaborator. I am eager to work with others on solutions and ideas in the future.
+            </p>
     </div>
 
-    
-    <body onload="displayTime()">
-        <p id="time"></p>
-    </body>
+
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+              <div class="skill">
+                <p class="skill-name">Java</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">C++</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">Python</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">HTML/CSS/Javascript</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">TensorFlow</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">NodeJS</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">Git/Github</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">Swift and Xcode</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">Bootstrap 5</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">Amazon Web Services</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star"></span>
+                </div>
+              </div>
+              <div class="skill">
+                <p class="skill-name">Django Framework</p>
+                <div class="stars">
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star filled"></span>
+                  <span class="star"></span>
+                </div>
+              </div>
+              <!-- Add more skills here -->
+            </div>
+        </section>
+
+
+        <div id="dance">
+            <p>When I am not working on coding projects and attending school, I am a dancer and the finance captain of Kahaani, a bollywood dance team at UCSC.<br></p>
+            <p>In the past year, we performed our spin-off of "The Notebook" at multiple competitions and placed first at Tamasha SD and Bollywood Berkeley</p>
+              
+        </div>
+
+        
+    </div>
+
+    <div id="portfolio">
+        <h1>Portfolio</h1>
+        <p>Here is my resume/portfolio, feel free to take a peek<br></p>
+        <div class="pdf-container"> 
+            <embed src="resume.pdf" width="500" height="600" type="application/pdf">
+        </div>
+        <br>
+    </div>
+
+
+
+    <div id="contact">
+        <h1>contact</h1>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br>
+    </div>
       
 
-    <img src="IMG_9597.jpg" width="500" height="300" >
-
-
     
+
+
 
 </body>
 </html>
