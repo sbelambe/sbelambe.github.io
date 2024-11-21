@@ -1,3 +1,73 @@
+body {
+    background-color: #b5cfe4;
+}
+header {
+    background-color: #6fa8dc;
+}
+.container-fluid.main {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    animation: fadeInUp 2s ease-out; /* Apply the animation */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; /* Completely transparent */
+        transform: translateY(50px); /* Start 50px below */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Final position */
+    }
+}
+
+.name {
+    font-family: 'CustomFont', sans-serif;
+    color: #fbf6eb;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeInUp 2.5s ease-out; /* Slight delay for effect */
+}
+
+.description h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #6fa8dc;
+    margin: 0;
+    text-align: center;
+    animation: fadeInUp 3s ease-out; /* Further delay */
+}
+
+.description h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #6fa8dc;
+    margin: 0;
+    text-align: center;
+    animation: fadeInUp 3s ease-out; /* Further delay */
+}
+
 h1 {
-    color: red;
+    font-family: 'CustomFont', sans-serif;
+    color: #fbf6eb; /* Maintain your custom color */
+}
+
+/* Style for the "About" container */
+#about {
+    padding: 50px; /* Add padding for spacing */
+}
+
+#projects-experience {
+    padding: 50px; /* Add padding for spacing */
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/Vonique 64.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
