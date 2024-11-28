@@ -1,73 +1,124 @@
 body {
-    background-color: #b5cfe4;
+  background-color: #b5cfe4;
 }
-header {
-    background-color: #6fa8dc;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent !important;
 }
+
+.navbar {
+  padding: 1rem; 
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #d1e8ff;
+}
+
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
 .container-fluid.main {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    animation: fadeInUp 2s ease-out; /* Apply the animation */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 2s ease-out;
 }
 
 @keyframes fadeInUp {
-    0% {
-        opacity: 0; /* Completely transparent */
-        transform: translateY(50px); /* Start 50px below */
-    }
-    100% {
-        opacity: 1; /* Fully visible */
-        transform: translateY(0); /* Final position */
-    }
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .name {
-    font-family: 'CustomFont', sans-serif;
-    color: #fbf6eb;
-    font-size: 100px;
-    font-weight: bold;
-    text-align: center;
-    animation: fadeInUp 2.5s ease-out; /* Slight delay for effect */
+  font-family: 'CustomFont', sans-serif;
+  color: #fbf6eb;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeInUp 2.5s ease-out;
 }
 
 .description h2 {
-    font-size: 30px;
-    font-weight: normal;
-    color: #6fa8dc;
-    margin: 0;
-    text-align: center;
-    animation: fadeInUp 3s ease-out; /* Further delay */
+  font-size: 30px;
+  font-weight: normal;
+  color: #6fa8dc;
+  margin: 0;
+  text-align: center;
+  animation: fadeInUp 3s ease-out;
 }
 
 .description h3 {
-    font-size: 20px;
-    font-weight: normal;
-    color: #6fa8dc;
-    margin: 0;
-    text-align: center;
-    animation: fadeInUp 3s ease-out; /* Further delay */
+  font-size: 20px;
+  font-weight: normal;
+  color: #6fa8dc;
+  margin: 0;
+  text-align: center;
+  animation: fadeInUp 3s ease-out;
 }
 
 h1 {
-    font-family: 'CustomFont', sans-serif;
-    color: #fbf6eb; /* Maintain your custom color */
+  font-family: 'CustomFont', sans-serif;
+  color: #fbf6eb;
 }
 
-/* Style for the "About" container */
 #about {
-    padding: 50px; /* Add padding for spacing */
+  padding: 50px;
 }
 
 #projects-experience {
-    padding: 50px; /* Add padding for spacing */
+  padding: 50px;
 }
 
 @font-face {
-    font-family: 'CustomFont';
-    src: url('fonts/Vonique 64.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'CustomFont';
+  src: url('fonts/Vonique 64.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
