@@ -13,27 +13,18 @@ const projects = {
       "This internship gave me hands-on experience with full-stack development and taught me how to collaborate in a fast-paced environment.",
   },
   2: {
-    name: "Machine Learning Competition",
-    date: "March 2023",
-    location: "Remote",
+    name: "NSF Machine Learning and Cybersecurity Program",
+    date: "May 2024 - August 2023",
+    location: "San Jose State University",
     whatIDid: [
-      "Built a Generative Adversarial Network (GAN) to generate Monet-style images.",
-      "Achieved top 10% performance on the Kaggle leaderboard.",
+      "Performed feature engineering, data pre-processing, and model training with Random Forest and K nearest neibors usin gPython, Scikit learning, pandas and numpy to detect botnet-baed attacks in network intrusion detection systems",
+      "Utilized datasets such as CTU-13 and IOT for training and applied obfuscation techniques to simulate attacker behaviors and test model robustness in identidying malidcious traffic, achieving 90-99% accuracy", 
+      "Employed synthetiuc data germination foir traffiic classification and balanced datasets to enhave model effectiveness",
+      "COntributed to enhancing cybersecurity defense wiuth efficient detection of malicious traffic",   
     ],
-    links: ["https://www.kaggle.com/competitions"],
+    links: [""],
     thoughts:
       "It was a challenging and rewarding experience that deepened my understanding of neural networks.",
-  },
-  3: {
-    name: "Open Source Contribution",
-    date: "Ongoing",
-    location: "Remote",
-    whatIDid: [
-      "Fixed critical bugs in an open-source library used by thousands of developers.",
-      "Added a feature to improve accessibility.",
-    ],
-    thoughts:
-      "Contributing to open source is fulfilling as it helps a global community of developers.",
   },
 };
 
