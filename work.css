@@ -1,85 +1,165 @@
 :root {
-    --light-cyan: #D1FAFF;
-    --light-blue: #9BD1E5;
-    --air-force-blue: #6A8EAE;
-    --jade: #57A773;
-    --dark-spring-green: #157145;
-  }
+  --light-cyan: #D1FAFF;
+  --light-blue: #9BD1E5;
+  --air-force-blue: #6A8EAE;
+  --jade: #57A773;
+  --dark-spring-green: #157145;
+  --light-gray: #f4f4f9;
+  --dark-gray: #2c3e50;
+  --accent-color: #ff5722;
+}
 
-body {
-    background-color: var(--air-force-blue);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    height: 100vh;
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-  }
-  
-  .sidebar {
-    width: 25%;
-    background-color: #f4f4f4;
-    padding: 15px;
-    border-right: 2px solid #ccc;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .sidebar li:hover {
-    background-color: #ddd;
-  }
-  
-  .main-content {
-    flex-grow: 1;
-    padding: 20px;
-  }
-  
-  #details {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #fafafa;
-  }
-  
-  .details-item {
-    margin-bottom: 15px;
-  }
-  
-  .details-item strong {
-    display: block;
-    font-weight: bold;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background-color: var(--air-force-blue);
+  color: var(--dark-gray);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
-  .project-details {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 5px;
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 90vh;
+  background-color: var(--light-gray);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 30%;
+  background-color: var(--jade);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border-right: 3px solid var(--dark-spring-green);
+  color: #fff;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--dark-spring-green);
+  padding-bottom: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 12px 15px;
+  background-color: var(--dark-spring-green);
+  color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.sidebar li:hover {
+  background-color: var(--light-blue);
+  color: var(--dark-gray);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.sidebar li.active {
+  background-color: var(--light-blue);
+  color: var(--dark-gray);
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content h2 {
+  font-size: 28px;
+  color: var(--dark-gray);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#details {
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px dashed var(--air-force-blue);
+  background-color: var(--light-cyan);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--dark-gray);
+}
+
+.details-item {
+  margin-bottom: 20px;
+}
+
+.details-item strong {
+  display: block;
+  font-weight: bold;
+  color: var(--dark-spring-green);
+}
+
+.project-details {
+  background-color: var(--light-blue);
+  border: 2px solid var(--jade);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: var(--dark-gray);
+}
+
+.project-details .name {
+  font-size: 20px;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.project-details .date {
+  font-size: 16px;
+  color: var(--dark-gray);
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      height: 100vh;
   }
-  
-  #project1 .name {
-    color: #d35400;
-    font-size: 20px;
+
+  .sidebar {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
   }
-  
-  #project1 .date {
-    color: #2c3e50;
+
+  .sidebar li {
+      width: 100%;
+      text-align: center;
   }
-  
+
+  .main-content {
+      flex: 1;
+      padding: 20px;
+  }
+}
